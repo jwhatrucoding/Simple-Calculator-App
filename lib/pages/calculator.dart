@@ -4,9 +4,6 @@
 import 'package:flutter/material.dart';
 // import 'package:math_expressions/math_expressions.dart';
 
-
-
-
 class Calculator extends StatefulWidget {
   const Calculator({super.key});
 
@@ -15,31 +12,36 @@ class Calculator extends StatefulWidget {
 }
 
 class _CalculatorExtend extends State<Calculator> {
-  // variables
+  // Variables
   String _userInput = "";
   final String _result = "0";
 
-  // methods
+  // Methods
+  // Add input
   void _addToInput(String value) {
     setState(() {
       _userInput += value;
     });
   }
 
+  // Reset
   void _reset() {
     setState(() {
       _userInput = "";
     });
   }
 
-   void _deleteLast() {
+  // Delete
+  void _deleteLast() {
     setState(() {
       if (_userInput.isNotEmpty) {
         _userInput = _userInput.substring(0, _userInput.length - 1);
       }
     });
   }
-   void _equals() {
+
+  // Equals
+  void _equals() {
     setState(() {
       // TODO: Calculate user input
     });
@@ -64,6 +66,7 @@ class _CalculatorExtend extends State<Calculator> {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              // Buttons
               children: [
                 ElevatedButton(
                     onPressed: () => _addToInput("+"), child: Text("+")),
