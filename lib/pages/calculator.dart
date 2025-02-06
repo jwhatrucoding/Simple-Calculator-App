@@ -68,6 +68,7 @@ class _CalculatorExtend extends State<Calculator> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               // Buttons
               children: [
+                // Operators
                 ElevatedButton(
                     onPressed: () => _addToInput("+"), child: Text("+")),
                 ElevatedButton(
