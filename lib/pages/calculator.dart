@@ -81,6 +81,7 @@ class _CalculatorExtend extends State<Calculator> {
                     onPressed: () => _deleteLast(), child: Text("DEL")),
               ],
             ),
+            // Numbers
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
