@@ -115,6 +115,7 @@ class _CalculatorExtend extends State<Calculator> {
                     onPressed: () => _addToInput("9"), child: Text("9")),
               ],
             ),
+            // Zero / Equals / Reset
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
